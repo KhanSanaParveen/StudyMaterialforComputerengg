@@ -1,0 +1,224 @@
+body{
+    font: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+
+#container{
+    width:90%  ;
+/*    border: 1px solid gray;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+#header{
+/*    height: 100px;*/
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#brands{
+    float: left;
+    flex: 50%;
+/*    text-align: center;*/
+}
+#brand{
+    float: left;
+    flex: 50%;
+    text-align: center;
+}
+
+h1 a{
+    font-size: 40px;
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none;
+}
+
+*
+
+
+
+
+
+.clear {
+    clear: both;
+}
+#menu  {
+/*    height: 70px;*/
+    background: linear-gradient(#F8F594, #D5D533);
+    background: -webkit-linear-gradient(#F8F594, #D5D533);
+    background: -o-linear-gradient(#F8F594, #D5D533);
+    background: -moz-linear-gradient(#F8F594, #D5D533);
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+#menu  a{
+/*    float: left;*/
+    padding: 0 10px;
+    height: 30px;
+    border-right: 1px solid  #5d12e7;
+    
+    
+}
+#menu a:last-child{
+    border-right: none;
+}
+
+#menu  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #5d12e7;
+    line-height: 30px;
+    transition: font-size 0.3s ease;
+    
+}
+
+#menu  a:hover, #menu  a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: #B314DB;
+}
+/*small screens: vertical menu*/
+@media screen and (max-width: 700px){
+    #menu{
+          flex-direction: column;
+        align-content: center;
+     }
+    #menu  a{
+        border-right: none;
+}
+}
+
+#menu li {
+    list-style: none;
+
+}
+#menu li ul li{
+/*    float: left;*/
+    padding: 0 5px;
+
+    
+}
+
+.sub-menu{
+    display: none;
+}
+#menu li:hover .sub-menu{
+    display: block;
+    position: absolute;
+}
+#menu li:hover .sub-menu ul{
+    display: block;
+}
+
+.sub-menu1{
+    display: none;
+}
+#menu li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+}
+#menu li:hover .sub-menu1 ul{
+    display: block;
+}
+.sub-menu1{
+    
+   margin-left:  30px;
+   
+    padding-bottom: 20px ;
+    padding-right: 20px ;
+     background: linear-gradient(#F8F594, #D5D533);
+    
+}
+.sub-menu{
+      background: linear-gradient(#F8F594, #D5D533);
+    padding-right: 30px ;
+     margin-left:  20px;
+}
+.sub-menu1 ul li {
+    float:left;
+   text-align:justify;
+}
+.sub-menu1 ul li :last-child{
+        border-right: none;
+
+}
+.sub ul li{
+    float: none;
+}
+
+
+.box > div{
+    background-color: #66a5AD;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+/*    margin: 2px;*/
+}
+
+.box{
+
+/*    height: 250px;*/
+    background-color: #07575B;
+/*    turning the container to a grid*/
+    display: grid;
+/*    rows height*/
+    grid-template-rows: repeat(3,45px);
+/*    columns width*/
+    grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
+/*    gutter*/
+    grid-gap: 5px;
+    padding: 7px;
+/*    set the height of any extra rows outside the template(implicit grid)*/
+    grid-auto-rows: 50px;
+/*
+    grid-auto-columns: 200px;
+    grid-auto-flow: column;
+*/
+}
+#apple{
+/*
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 5;
+*/
+    grid-area: 1/1/1/6;
+    
+}
+
+
+
+
+
+
+
+.footer {
+    height: 60px;
+    background: linear-gradient(#F6F390,#D5D533);
+    background: -webkit-linear-gradient(#F6F390,#D5D533);
+    background: -o-linear-gradient(#F6F390,#D5D533);
+    background: -moz-linear-gradient(#F6F390,#D5D533);
+    padding: 10px 30px;
+    margin-top: auto;
+}
+
+
+
